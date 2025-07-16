@@ -11,3 +11,16 @@ myProjects.forEach((item)=>{
     projectDiv.appendChild (card);
 }
 )
+const projectLearn = document.getElementById("LearningPaths");
+const learned = [
+  {name: "Learned Java" , desc:"Very Basic"},
+  {name: "Learned C" , desc: "Very Basic"},
+  {name: "Learned JS" , desc: "Very Bsic"}
+];
+
+learned.forEach((item1) => {
+  let cardLearn = document.createElement("div");
+  cardLearn.className = "shadow-sm rounded-sm p-10 m-3"
+  cardLearn.innerHTML = `<h4 class = "text-xl"> ${item1.name} </h4> <p class = "text-[0.7em]"> ${item1.desc} </p>`;
+  projectLearn.appendChild(cardLearn);
+}) 
