@@ -25,8 +25,6 @@
     --font-weight-semibold: 600;
     --font-weight-extrabold: 800;
     --radius-sm: 0.25rem;
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -189,9 +187,6 @@
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
-  .mt-4 {
-    margin-top: calc(var(--spacing) * 4);
-  }
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
   }
@@ -219,29 +214,17 @@
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
   .h-\[50vh\] {
     height: 50vh;
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
   }
-  .max-w-\[0vw\] {
-    max-width: 0vw;
-  }
-  .max-w-\[20vw\] {
-    max-width: 20vw;
-  }
-  .max-w-\[30vw\] {
-    max-width: 30vw;
-  }
-  .max-w-\[40vw\] {
-    max-width: 40vw;
-  }
-  .max-w-\[50vw\] {
-    max-width: 50vw;
-  }
-  .max-w-\[70\] {
-    max-width: 70;
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .max-w-\[70vw\] {
     max-width: 70vw;
@@ -297,14 +280,6 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -348,55 +323,9 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-  .sm\:max-w-\[0vw\] {
-    @media (width >= 40rem) {
-      max-width: 0vw;
-    }
-  }
-  .sm\:max-w-\[30\] {
-    @media (width >= 40rem) {
-      max-width: 30;
-    }
-  }
-  .sm\:max-w-\[30vh\] {
-    @media (width >= 40rem) {
-      max-width: 30vh;
-    }
-  }
-  .sm\:max-w-\[30vw\] {
-    @media (width >= 40rem) {
-      max-width: 30vw;
-    }
-  }
-  .sm\:max-w-\[50vw\] {
-    @media (width >= 40rem) {
-      max-width: 50vw;
-    }
-  }
   .sm\:max-w-\[60vw\] {
     @media (width >= 40rem) {
       max-width: 60vw;
-    }
-  }
-  .sm\:max-w-\[70vw\] {
-    @media (width >= 40rem) {
-      max-width: 70vw;
-    }
-  }
-  .sm\:max-w-\[80vw\] {
-    @media (width >= 40rem) {
-      max-width: 80vw;
-    }
-  }
-  .sm\:max-w-\[500vw\] {
-    @media (width >= 40rem) {
-      max-width: 500vw;
-    }
-  }
-  .sm\:text-4xl {
-    @media (width >= 40rem) {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
   .sm\:text-5xl {
@@ -405,24 +334,9 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
-  .md\:max-w-\[40\] {
-    @media (width >= 48rem) {
-      max-width: 40;
-    }
-  }
-  .md\:max-w-\[40vh\] {
-    @media (width >= 48rem) {
-      max-width: 40vh;
-    }
-  }
   .md\:max-w-\[40vw\] {
     @media (width >= 48rem) {
       max-width: 40vw;
-    }
-  }
-  .md\:max-w-\[50vw\] {
-    @media (width >= 48rem) {
-      max-width: 50vw;
     }
   }
   .md\:text-2xl {
@@ -516,11 +430,6 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@keyframes pulse {
-  50% {
-    opacity: 0.5;
-  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
