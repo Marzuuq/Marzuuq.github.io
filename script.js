@@ -28,7 +28,7 @@ const learned = [
 
 learned.forEach((item1) => {
   let cardLearn = document.createElement("div");
-  cardLearn.className = "shadow-sm rounded-sm p-10 m-3 mt-13"
-  cardLearn.innerHTML = `<img src = "${item1.img}" class = "h-16  w16 m-auto mb-5" > <h4 class = "text-xl">  ${item1.name} </h4> <p class = "text-[0.7em]"> ${item1.desc} </p>`;
+  cardLearn.className = "shadow-sm rounded-sm   w-90  md:w-65vw]   p-10 m-3 mt-13"
+  cardLearn.innerHTML = `<img src = "${item1.img}" class = "h-16  m-auto mb-5" > <h4 class = "text-xl">  ${item1.name} </h4> <p class = "text-[0.7em]"> ${item1.desc} </p>`;
   projectLearn.appendChild(cardLearn);
 }) 
