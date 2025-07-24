@@ -11,13 +11,10 @@ myProjects.forEach((item)=>{
     projectDiv.appendChild (card);
 }
 )
-// const mainImagesOfLearning = document.getElementById("MainIMages");
-// const myLearningImages = [
-//   "Assets/github.png"
 
-// ]
-
-
+function toggleTheme(){
+  
+}
 
 const projectLearn = document.getElementById("LearningPaths");
 const learned = [
