@@ -6,7 +6,7 @@ const myProjects = [
 ];
 myProjects.forEach((item)=>{
     let card = document.createElement("div");
-    card.className="shadow-sm rounded-sm p-10 m-3 "
+    card.className="shadow-sm rounded-sm   w-90  md:w-65vw]   p-10 m-3 mt-13 "
     card.innerHTML = `<h4 class = " text-xl"> ${item.name} </h4> <p class = "text-[0.5em]"> ${item.desc}</p>`;
     projectDiv.appendChild (card);
 }
