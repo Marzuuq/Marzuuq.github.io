@@ -1,6 +1,6 @@
 const projectDiv = document.getElementById("projects");
 const myProjects = [
-  { name: "Age Calculator", desc: "This is a fundamental project for me to practice" , img: "./Assets/Age.png" , link: "https://github.com/Marzuuq/My-Frontend-projects/tree/main/Age-calculator" },
+  { name: "Age Calculator", desc: "This is a fundamental project for me to practice" , img: "./Assets/Age.png" , link: "age-calculator-marzuuq.netlify.app" },
   { name: "Mini Calculator", desc: "This is a fundamental project for me to hone my skills." , img:"./Assets/mathematics.png" , link:"https://github.com/Marzuuq/My-Frontend-projects/tree/main/mini-calculator" },
   ,
 ];
